@@ -1,0 +1,8 @@
+autopep8==1.5.7
+certifi==2021.5.30
+flake8==3.9.2
+mccabe==0.6.1
+pycodestyle==2.7.0
+pyflakes==2.3.1
+toml==0.10.2
+wincertstore==0.2
