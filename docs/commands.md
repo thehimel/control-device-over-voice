@@ -14,3 +14,7 @@ pipwin install pyaudio
 # https://pypi.org/project/SpeechRecognition/
 pip install SpeechRecognition
 ```
+
+## Install PyAudio
+
+https://stackoverflow.com/questions/55936179/trying-to-install-pyaudio-using-pip
