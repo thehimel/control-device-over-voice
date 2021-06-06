@@ -1,5 +1,7 @@
 import speech_recognition as sr
 
+from src.utils import process_text
+
 global text
 
 
@@ -26,11 +28,15 @@ def recognize():
             text = r.recognize_google(audio_data=audio, language=languages[1])
             if text:
                 print(f'Your speech: {text}')
+                process_text(text)
 
-        except sr.WaitTimeoutError as e:
+        except sr.WaitTimeoutError:
             recognize()
 
         except sr.UnknownValueError as e:
+            print(e)
+
+        except Exception as e:
             print(e)
 
     recognize()
